@@ -1,4 +1,4 @@
-const CACHE_NAME = "agenda-shell-v12";
+const CACHE_NAME = "agenda-shell-v13";
 
 const APP_SHELL = [
   "./",
