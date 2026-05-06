@@ -318,7 +318,7 @@
         }else if(!isLoggedIn()){
           cloudSyncStatus.textContent = "\u2601\uFE0F Cloud: non attivo";
         }else if(kind === "ok"){
-          cloudSyncStatus.textContent = "\u2601\uFE0F Cloud aggiornato: " + formatCloudDateTime(remoteLastCheckedAt) + " - Ultima modifica: " + formatCloudDateTime(remoteLastKnownUpdatedAt || (state && state.updatedAt));
+          cloudSyncStatus.textContent = "\u2601\uFE0F Cloud aggiornato: " + formatCloudDateTime(remoteLastCheckedAt) + "\nUltima modifica: " + formatCloudDateTime(remoteLastKnownUpdatedAt || (state && state.updatedAt));
         }else if(kind === "syncing"){
           cloudSyncStatus.textContent = "\uD83D\uDD04 Cloud: aggiornamento in corso...";
         }else if(kind === "pending"){
